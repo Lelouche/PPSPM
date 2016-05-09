@@ -2,3 +2,11 @@ numpy
 scipy
 bitarray
 pydicom
+cssselect
+lxml
+ntlk
+pdfminer
+pdfquery
+pymedtermino
+pyquery
+pytesseract
