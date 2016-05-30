@@ -789,6 +789,7 @@ str_tot_time = '%.4f' %(tot_time)
 # Calculate total memory usage for PP-SPM
 memo_usage =     auxiliary.get_memory_usage() 
 memo_usage_val = auxiliary.get_memory_usage_val()
+memo_usage_val = memo_usage_val if memo_usage_val else 0.0
 str_mem_usage = '%.4f' %(memo_usage_val)
 
 # write efficiency results into the log file

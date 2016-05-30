@@ -49,8 +49,10 @@ for dataset in datasets:
 
         print 'Starting processes.'
         
-        database = '../datasets/database_recs_%s.csv' % dataset
-        query = '../datasets/query_recs_%s.csv' % dataset
+        #database = '../datasets/database_recs_%s.csv' % dataset
+        database = '..'+os.sep+'datasets'+os.sep+'database_recs_%s.csv' % dataset
+        #query = '../datasets/query_recs_%s.csv' % dataset
+        query = '..'+os.sep+'datasets'+os.sep+'query_recs_%s.csv' % dataset
 
         cmd_line_list = ['python', 'PPSPM.py', database, query, block_attrs[dataset], match_attrs[dataset], m, enc]
 
